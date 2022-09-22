@@ -17,7 +17,7 @@ public class Negativa extends Estado{
 	@Override
 	public void depositar(double valor, Conta c) {
 		c.saldo+= valor;
-		if(c.saldo > 0) {
+		if(c.saldo >= 0) {
 			System.out.println("Positivo!");
 			c.estado = new Positiva();
 		}

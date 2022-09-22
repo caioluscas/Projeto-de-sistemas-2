@@ -10,7 +10,7 @@ public class Conta {
 	}
 	
 	
-	
+	//metodo gancho
 	public void sacar(double valor) {
 		this.estado.sacar(valor,this); //o this dentro do () serve para ele saber qual classe ele vai implementar
 	}

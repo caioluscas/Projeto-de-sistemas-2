@@ -13,7 +13,7 @@ public class Bloqueada extends Estado {
 	@Override
 	public void depositar(double valor, Conta c) {
 		c.saldo+= valor;
-		if(c.saldo>0) {
+		if(c.saldo>=0) {
 			c.estado = new Positiva();
 			System.out.println("Conta bloqueada positiva!");
 			
